@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3002
 
+//Configuriamo gli assets statici per visualizzare le immagini di ogni post
+app.use(express.static('public'))
+
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 })
