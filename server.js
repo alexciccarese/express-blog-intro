@@ -49,4 +49,9 @@ const posts = [
   },
 ]
 
-console.log(posts);
+
+// root bacheca
+app.get('/api/v1/bacheca', (req, res) => {
+
+  res.json(posts)
+})
